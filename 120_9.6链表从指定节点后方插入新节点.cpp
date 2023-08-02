@@ -75,16 +75,16 @@ int main()
 	 
 	scanf_s("%d", &find);
 	int ret = searchLink(&t1, find, &niu);
-	printf("链表里面添加了%d个数字\n", getLinkTotalNumber(&t1)-6);
-	
 	if (ret == 1)
 	{
-		printf("找到了%d\n",find);
+		printf("找到了%d\n", find);
 	}
 	else if (ret == 0)
 	{
-		printf("没找到了%d\n",find);
+		printf("没找到了%d\n", find);
 	}
+	printf("成功在链表里面添加了%d个数字\n", getLinkTotalNumber(&t1)-6);
+	
 	printLink(&t1);
 
 	return 0;
